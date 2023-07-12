@@ -1,0 +1,256 @@
+Agenda for the day:
+====================
+1) Walkthrough on EdTech Platform
+
+https://platform.testleaf.com/
+
+2) Rest API Fundamentals
+
+3) Introduction to postman
+a) basic Create Request
+
+
+
+Service now:
+============
+
+Instance URL: https://dev90367.service-now.com/
+Username: admin
+Password: d-J+lC2Hk7Aj
+
+Architecture:
+==============
+1) Rest
+2) GraphQL
+GRPC
+
+Swagger --Documentation tool for API
+
+Testing API's -- API documentation is the requirement
+
+Service now-- Raising tickets , helpdesk
+Jira --Project management application
+Jira for Test management  ---Plugins  (Zephyr,Xray,AIO Tests)
+Sales force  --CRM (Customer relationship Management)
+
+Soap --Supports only XML , Post and Get methods
+REST--Json,XML and text , Rest supports Post,Put,Delete and patch
+
+CRUD --API 
+
+Create ---Post
+Read  ---Get
+Update
+PUT --Replace entire resource
+PATCH --Update a particular resource
+Delete ---Delete
+
+
+Authentication and Authorization
+
+Authentication --- User's Identity --Appropriate /right user
+Authorization ---- Access/Permission/Role to go to datacentre
+
+Super Admin --After successful authentication, you will having full access
+
+Admin--After successful authentication ,lower level success super admin
+
+Super Admin
+Admin
+Normal user
+
+Authentication Types:
+======================
+
+1) No Auth
+2) Basic Authentication--Username ,password
+3) OAuth 2.0-- Restricted Access
+4) Token --Jwt ,Json web tokens
+
+Headers:
+==========
+
+Content-Type -Format in which the API request is send
+(Json,XML,Text)
+
+Accept --Format in which the response is recieved
+
+Status Codes:
+=============
+Get --200
+Post-201
+Update-200/204
+Delete-204
+
+404-resource not found
+401 -Username and password mismatch(invalid credentials)
+400 --Url/Request Body format is incorrect
+
+
+5 Step process in Testing API :
+===============================
+
+1) Requirement Document --API document
+a) Inside the Application
+b) Swagger
+c) Word document
+d) html document
+e) Pdf 
+
+1) Login to servicenow developer https://dev90367.service-now.com/navpage.do
+2) Click on ALL, search for explorer
+3) Click on RestAPI Explorer from search result
+
+
+2) Endpoint url
+
+https://dev90367.service-now.com/api/now/table/incident
+
+3) Add request body,header and Authentication
+
+Add Authentication in postman:
+================================
+a) Click on the Collection
+b) Click on Autorization option
+c) Select the Type dropdown as Basic
+d) Give the username and password of service now instance
+
+Username: admin
+Password: d-J+lC2Hk7Aj
+
+By Default Postman will handle the headers( Content type)
+
+Request Body:
+==============
+1) Click on Body option in the request
+2) Click the option as raw
+3) Select the Json format
+4) Copy paste the request body from Rest API Explorer( API document)
+{"short_description":"First incident Created via postman"}
+5) CLick on Beautify option
+
+4) Send the Request
+
+Click on the Send Button
+
+5) Validate Response
+
+Tests  tab in the postman request--Post condition validation
+
+a) Click on Tests tab
+b) use the snippets for validating status code
+
+
+
+
+
+
+
+3) Introduction postman
+
+Postman --API Testing ,"Semi-Automation"
+
+Insomania
+postwoman
+
+Limitations of Postman:
+=======================
+1) Supports only csv/json file for reading data
+2) CI/CD it is directly not possible (command line tool --newman)
+3) Parallel execution is not possible
+4) Reporting is not directly possible (command line tool --newman)
+
+Create workspace in Postman:
+=============================
+
+1) Click on Workspace menu at the left top
+2) click create workspace button
+3) Enter any valid text for Name and summary
+4) Select the Visibility option as personal
+5) Click on create work space
+
+
+Bundle or package under which all the api's are grouped
+
+Create a collection by clicking on Create new collection option
+
+Add Requests to the collection
+=============================
+
+1) Click on  more option (3 horizontal dots) near collection
+2) Click on Add Request
+
+
+*Assignment for the day*
+
+Create a Incident in Postman and validate the response code
+
+Note:
+Follow the 5 steps process
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
